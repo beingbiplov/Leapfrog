@@ -158,7 +158,7 @@ input[type=text]{
 }
 
 h1{
-    padding: 0.5em 0;;
+    padding: 0.2em 0;;
 }
 
 
@@ -383,5 +383,146 @@ h1{
     margin: 1em 0;
 }
 
+.cards{
+    padding: 4em 0;
+}
+
+.card{
+    box-shadow: 1px 1px 10px #8e9193;
+    border-radius: 4px;
+}
+
+.card1, .card2, .card3{
+    float:left;
+    height: auto;
+    width: 15em;
+    background-color: white;
+    margin-right: 5em;
+    
+}
+
+.card_header{
+    padding: 1.2em;
+}
+
+.dp_img{
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+    padding-right: 0.8em;
+}
+
+.user_info{
+    float: left;
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
 
 
+.ellipsis{
+    float: right;
+}
+
+.post_img  {
+    width: 15em;
+    padding: 1.5em, 0;
+}
+
+.interactions{
+    padding: 0.5em 0.5em;
+}
+
+.inter_div{
+    float: left;
+    
+}
+.inter_icon{
+    width: 1.3em;
+}
+
+#like_ic{
+    padding-left: .5em;
+}
+
+#chat_ic{
+    padding-left: 4.5em;
+}
+#share_ic{
+    padding-right: 0.5em;
+    float: right;
+}
+
+.inter_sep{
+    margin: 2em 0.3em 0.5em
+}
+
+.comment_sec{
+    padding: 1em;
+
+}
+
+#comment_sec_dp_img{
+    width: 35px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.cmt_dp{
+    float: left;
+    padding-right: 0.8em;
+}
+
+.comment_box {
+    float: left;
+}
+
+.comment_text{
+    width: 10em;
+    height: 1em;
+}
+
+.head-img {
+    width: 15em;
+    height: 11em;
+}
+
+.play_img{
+    width: 3em;
+    position: absolute;
+    top: 28em;
+    left: 34em;
+}
+
+.footer-sec{
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+.green-btn{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.post_img_2 {
+    width: 17em;
+    padding: 1.5em, 0;
+}
+
+#card_thr{
+    width: 17em;
+}
+
+.like_cmt{
+    float: right;
+    padding-right: 0.5em;
+}
+
+.inter_icon_lk{
+    width: 1.3em;
+    font-size: 0.9em;
+}
+
+.inter-sec{
+    padding: 1em 0.5em;   
+}
