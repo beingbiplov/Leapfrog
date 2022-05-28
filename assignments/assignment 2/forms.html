@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>UI Kit: Forms</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <span class="logo"><a href="./index.html"> UI Kit </a></span></li>
+                <li><a href="./index.html"> Color</a></li>
+                <li><a href="./typography.html"> Typography</a></li>
+                <li><a href="./buttons.html">Buttons</a></li>
+                <li><a href="./forms.html">Forms</a></li>
+                <li><a href="./list_group.html">List Group</a></li>
+                <li><a href="./tables.html">Table</a></li>
+                <li><a href="./cards.html">Card</a></li>
+
+            <div class="search_box">
+                <li>
+                    <input type="text" class="search_input" placeholder="Search">
+
+                </li>
+                <li>
+                    <button class="btn search-btn">Search</button>
+                </li>
+            </div>
+
+        </ul>
+
+    </nav>
+
+    <div class="main">
+        <h1>Forms</h1>
+        <hr>
+
+        <section class="list-group">
+            <h2 class="sub-head">Component</h2>
+            <ul>
+                <li >Color</li>
+                <li>Typography</li>
+                <li>Buttons</li>
+                <li id="active">Forms</li>
+                <li>List Group</li>
+                <li>Table</li>
+                <li>Card</li>
+        
+            </ul>
+        </section>
+
+        <sections class="forms-form">
+            <form>
+                <label for="input">Input</label><br>
+                <input type="text"  placeholder="placeholder"><br>
+                <label for="select-menu">Select Menu</label><br>
+                
+                <select name="menu" >
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                <br>
+
+                <label for="txtarea">Textarea</label>
+                <br>
+                
+                <textarea id="txtarea" name="txtarea" rows="7" cols="55">
+                Textarea
+                </textarea>
+
+                <h2 class="sub-head">Checkboxs</h2>
+                
+
+                
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <th>Checkboxes</th>
+                        <th>Checkboxes Inline</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="checkbox" style="width: 1.4em; height:1.3em; padding-right:1em ;" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox"> 
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                        </td> &nbsp;
+                        <td>
+                            <input class="checkbox" style="width: 1.4em; height:1.3em" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox">
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                        </td>&nbsp;
+                        <td>
+                            <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox" checked>
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                        </td>&nbsp;
+                        <td>
+                            <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox" disabled>
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                        
+                        </td>&nbsp;
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox" checked>
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault" name="deafault"
+                                value="deafault checkbox" disabled>
+                            <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br> 
+
+                        </td>
+                        </tr>
+
+                    </tr>
+                </table>
+
+                <h2 class="sub-head">Validation</h2>
+
+                <label for="input" style="font-size: 0.8em;">Input Success</label><br>
+                <input type="text" class="success-input" style="border: 1px solid green;"><br>
+
+                <label for="input" style="font-size: 0.8em;">Input Error</label><br>
+                <input type="text" class="error-input" style="border: 1px solid red;"><br>
+                
+            </form>
+        </sections>
+        
+                
+    </div>
+</body>
+</html>
