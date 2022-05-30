@@ -1,0 +1,33 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 16px 30px;
+    color: white;
+    background: #4E42D9;
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    background: rgba(78, 66, 217, 0.18);
+    color: #4E42D9
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content {
+    padding: 0 120px;
+}
