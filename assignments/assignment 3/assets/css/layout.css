@@ -120,7 +120,7 @@ nav {
 
 .blog {
     background-color: #F8F8F8;
-    height: 887px;
+    height: 917px;
 }
 
 .blog-content {
@@ -195,3 +195,79 @@ nav {
 }
 
 /* blog section ends  */
+
+/* footer section starts here  */
+
+footer{
+    background-color: #292838;
+    height: 360px;
+}
+
+.footer_content {
+    padding: 72px 118px;
+}
+
+.footer_about {
+    float: left;
+}
+
+.footer_about h3 {
+    width: 195px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.footer_about p {
+    width: 398px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-cols {
+    width: 90px;
+    float: right;
+    margin-right: 89px;
+}
+
+.footer-cols h4 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-cols a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+    color: rgba(255, 255, 255, 0.8);
+    list-style: none;
+}
+
+.copyright-section {
+    background-color: #23222F;
+    height: 56px;
+}
+
+.copy-content p {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 19px;
+    padding-bottom: 17px;
+}
+
+/* footer section ends here  */
