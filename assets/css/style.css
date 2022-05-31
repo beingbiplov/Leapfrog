@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main{
+    padding: 3em;
+}
+
+header {
+    padding-left: 27em;;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 5em;
+    float: left;
+}
+
+header h2 {
+    float: left;
+    color: #31503e;
+    padding-left: 0.5em;
+    font-size: 26px;
+}
+
+.personal_details {
+    padding-left: 33em;
+}
+
+.personal_details h4 {
+    float: left;
+    padding-right: 4em;
+    margin-top: 0;
+    color: #888a8c;
+    font-size: 17px;
+}
+
+.assignments {
+    padding: 3em 27em;
+}
+
+.assign-box {
+    background-color: #f5f8fc;
+    padding: 1em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #8e9193;
+}
+
+.assign-box:hover {
+    box-shadow: 1px 1px 10px #00cb5b;
+}
+
+.assignments h5 {
+    margin-bottom: 0;
+    color: #888a;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.assignments h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+}
+
+.assign-box h3 a {
+    color: black;
+}
+
+.assign-box p {
+    margin-top: 7px;
+    color: #888a;
+    font-size: 14px;
+}
+
+.assign-btns {
+    padding-top: 1em;
+}
+
+.btn {
+    padding: 12px 16px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 11px;
+    line-height: 9px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 1em;
+}
+
+.btn:hover {
+    background-color: #25a25a;
+}
+
+.btn-secondary {
+    background: #ff9c00;
+    color: #ffffff
+}
+
+.btn-secondary:hover {
+    background-color: #ff7600;
+
+}
