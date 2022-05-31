@@ -302,17 +302,18 @@ footer{
     .logo {
         font-size: 24px;
         line-height: 36px;
-        padding: 40px 40.5px 70px;
+        padding: 21px 40.5px 70px;
         box-sizing: border-box;
     }
 
-        .navlist {
-            display: none;
-        }
+    .navlist {
+        display: none;
+    }
     .ham-icon {
         padding-left: 85%;
         padding-top: 5px;
         display: block;
+        cursor: pointer;
     }
 
     .ham-icon li {
@@ -380,6 +381,21 @@ footer{
         
     }
 
+    .navlist{
+        display: none;
+        text-align: center;
+        float: left;
+        margin-bottom: 5em;
+    }
+
+    .navlist li {
+        width: 100%;
+    }
+
+    .navlist.active {
+        display: block;
+    }
+
 }
 
 
@@ -391,7 +407,7 @@ footer{
             padding-right: 10px;
             padding-left: 0;
             padding-top: 20px;
-            width: 575px;
+            
             box-sizing: border-box;
         }
 
@@ -409,6 +425,7 @@ footer{
         padding-left: 85%;
         padding-top: 5px;
         display: block;
+        cursor: pointer;
     }
 
     .ham-icon li {
@@ -558,6 +575,21 @@ footer{
         padding-left:20px;
         padding-right: 20px;
         box-sizing: border-box;
+    }
+
+    .navlist {
+        display: none;
+        text-align: center;
+        float: left;
+        margin-bottom: 5em;
+    }
+
+    .navlist li {
+        width: 90%;
+    }
+
+    .navlist.active {
+        display: block;
     }
 
 }
