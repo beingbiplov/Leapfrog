@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- nav section  -->
+    <nav class="clearfix">
+        <div class="navbar">
+            <a href="./index.html">
+                <div class="logo">
+                    UI Kit
+                </div>
+            </a>
+            <ul class="navlist clearfix">
+                <li class="navitem"><a href="./index.html">Home</a> </li>
+                <li class="navitem"><a href="./tabs.html">Typography</a></li>
+                <li class="navitem"><a href="./buttons.html">Buttons</a></li>
+                <li class="navitem"><a href="./forms.html">Forms</a></li>
+                <li class="navitem"><a href="./listgroup.html">List Group</a></li>
+                <li class="navitem"><a href="./table.html">Tables</a></li>
+                <li class="navitem"><a href="./card.html">Card</a></li>
+            
+            </ul>
+            <div class="search">
+                <li>
+                    <button class="btn search-btn">Search</button>
+                </li>
+                <li>
+                    <input type="text" name="search" id="search">
+
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+
+        <h2 class="heading">Forms</h2>
+        <hr>
+
+            <!-- forms section  -->
+            
+            <div class="forms-section">
+                <section class="list-group">
+                    <h2 class="sub-head">Component</h2>
+                    <ul class="forms-list-gro">
+                        <li>Color</li>
+                        <li>Typography</li>
+                        <li>Buttons</li>
+                        <li id="active">Forms</li>
+                        <li>List Group</li>
+                        <li>Table</li>
+                        <li>Card</li>
+            
+                    </ul>
+                </section>
+            
+                <sections class="forms-form ">
+                    <form>
+                        <label for="input">Input</label><br>
+                        <input type="text" placeholder="Placeholder"><br>
+                        <label for="select-menu">Select Menu</label><br>
+            
+                        <select name="menu">
+                            <option value="A">Leap</option>
+                            <option value="B">Frog</option>
+                        </select>
+                        <br>
+            
+                        <label for="txtarea">Textarea</label>
+                        <br>
+            
+                        <textarea id="txtarea" name="txtarea" rows="7" cols="55">
+                                        Enter your text here!
+                                        </textarea>
+            
+                        <h2 class="sub-head">Checkboxs</h2>
+            
+            
+            
+                        <table style="width: 100%; text-align: left;">
+                            <tr>
+                                <th>Checkboxes</th>
+                                <th>Checkboxes Inline</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="checkbox" style="width: 1.4em; height:1.3em; padding-right:1em ;" type="checkbox"
+                                        id="deafault" name="deafault" value="deafault checkbox">
+                                    <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                                </td> &nbsp;
+                                <td>
+                                    <input class="checkbox" style="width: 1.4em; height:1.3em" type="checkbox" id="deafault"
+                                        name="deafault" value="deafault checkbox">
+                                    <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                                </td>&nbsp;
+                                <td>
+                                    <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault"
+                                        name="deafault" value="deafault checkbox" checked>
+                                    <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                                </td>&nbsp;
+                                <td>
+                                    <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault"
+                                        name="deafault" value="deafault checkbox" disabled>
+                                    <label for="checkbox" class="disabled" style="font-size: 0.8em;"> Default checkbox</label><br>
+            
+                                </td>&nbsp;
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault"
+                                        name="deafault" value="deafault checkbox" checked>
+                                    <label for="checkbox" style="font-size: 0.8em;"> Default checkbox</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+            
+                                <td>
+                                    <input class="checkbox " style="width: 1.4em; height:1.3em" type="checkbox" id="deafault"
+                                        name="deafault" value="deafault checkbox" disabled>
+                                    <label for="checkbox" class="disabled" style="font-size: 0.8em;"> Default checkbox</label><br>
+            
+                                </td>
+                            </tr>
+            
+                            </tr>
+                        </table>
+            
+                        <h2 class="sub-head">Radios</h2>
+            
+                        <table style="width: 100%; text-align: left;">
+                            <tr>
+                                <th>Radios</th>
+                                <th>Radios Inline</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="checkbox" style="width: 1.4em; height:1.3em; padding-right:1em ;" type="radio"
+                                        id="deafault" name="deafault" value="deafault radio">
+                                    <label for="radio" style="font-size: 0.8em;"> Default radio</label><br>
+                                </td> &nbsp;
+                                <td>
+                                    <input class="radio" style="width: 1.4em; height:1.3em" type="radio" id="deafault"
+                                        name="deafault" value="deafault radio">
+                                    <label for="radio" style="font-size: 0.8em;"> Default radio</label><br>
+                                </td>&nbsp;
+                                <td>
+                                    <input class="radio " style="width: 1.4em; height:1.3em" type="radio" id="deafault"
+                                        name="deafault" value="deafault radio" checked>
+                                    <label for="radio" style="font-size: 0.8em;"> Selected radio</label><br>
+                                </td>&nbsp;
+                                <td>
+                                    <input class="radio " style="width: 1.4em; height:1.3em" type="radio" id="deafault"
+                                        name="deafault" value="deafault radio" disabled>
+                                    <label class="disabled" for="radio" style="font-size: 0.8em;"> Disabled radio</label><br>
+            
+                                </td>&nbsp;
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="radio " style="width: 1.4em; height:1.3em" type="radio" id="deafault"
+                                        name="deafault" value="deafault radio" checked>
+                                    <label for="radio" style="font-size: 0.8em;"> Selected radio</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+            
+                                <td>
+                                    <input class="radio " style="width: 1.4em; height:1.3em" type="radio" id="deafault"
+                                        name="deafault" value="deafault radio" disabled>
+                                    <label class="disabled" for="radio" style="font-size: 0.8em;"> Disabled radio</label><br>
+            
+                                </td>
+                            </tr>
+            
+                            </tr>
+                        </table>
+            
+            
+                        <h2 class="sub-head">Validation</h2>
+            
+                        <label for="input" style="font-size: 0.8em;">Input Success</label><br>
+                        <input type="text" class="success-input" style="border: 1px solid green;"><br>
+            
+                        <label for="input" style="font-size: 0.8em;">Input Error</label><br>
+                        <input type="text" class="error-input" style="border: 1px solid red;"><br>
+            
+                    </form>
+                </sections>
+            </div>
+
+            <!-- 
+                Estimated time : 30min
+                Actual time: 40min 
+            -->
+
+            <!-- form sectin ends  -->
+
+
+    </div>
+
+
+
+</body>
+
+</html>

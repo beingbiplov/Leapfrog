@@ -11,7 +11,7 @@ nav {
 }
 
 .navbar {
-    padding: 0 5em;
+    padding: 0 11em;
 }
 
 .clearfix::after {
@@ -84,12 +84,15 @@ nav ul li {
 
 /* nav css ends  */
 
-
-.main {
-    padding: 2em 5em;
+a {
+    text-decoration: none;
 }
 
-.colors h2 {
+.main {
+    padding: 2em 10em;
+}
+
+.heading {
     font-size: 3rem;
     font-weight: bolder;
 }
@@ -166,9 +169,6 @@ hr {
     color: white;
 }
 
-.tablinks a {
-    text-decoration: none;
-}
 
 .tabcontent {
     padding: 6px 0;
@@ -201,8 +201,12 @@ hr {
 }
 
 .btn-hover-default {
-    background-color: #5227cc;
+    background-color: #7749f8;
     color: white;
+}
+
+.btn-hover-default {
+    background-color: #5227cc;
 }
 
 .btn-hover-outline {
@@ -211,8 +215,11 @@ hr {
 }
 
 .btn-focus-default {
-    background-color: #5227cc;
+    background-color: #7749f8;
     color: white;
+}
+.btn-focus-default {
+    background-color: #5227cc;
 }
 
 
@@ -225,4 +232,293 @@ hr {
     color: #8f8a8a;
     font-size: 16px;
     font-weight: lighter;
+}
+
+.forms-form {
+    float: left;
+    padding-left: 8em;
+    padding-top: 4em;
+    width: 50%;
+
+}
+
+.forms-form label {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.forms-form input,
+.forms-form select {
+    margin: 1em 0;
+    width: 25rem;
+    height: 2.5em;
+}
+
+.forms-list-gro li:hover{
+    background-color: #7749f8;
+    color: white;
+}
+
+.forms-form textarea {
+    margin: 1em 0;
+}
+
+.forms-section {
+    margin-top: 5em;
+}
+
+.list-group {
+    float: left;
+    width: 25em;
+}
+
+.list-group ul,
+.list-group-custom-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group ul li,
+.list-group-custom-content li {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: white;
+    padding: 12px 0.5em;
+}
+.lstgroup:hover {
+    background-color: #7749f8;
+    color: white;
+}
+
+#active {
+    background-color: #7749f8;
+    color: white;
+}
+
+.list-group-custom-content {
+    float: right;
+    width: 35em;
+}
+
+.table_design {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3em;
+}
+
+
+.disabled {
+    color: #8f8a8a;
+}
+
+.list-group-custom-content {
+    width: 35em;
+    float:left;
+    
+}
+
+
+.table_design {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table_design tr th,
+.table_design tr td {
+    padding: 1em 0;
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+
+}
+
+.dark-row {
+    background-color: #f3f4f5;
+}
+
+.pagination-btns {
+    padding: 2em 0;
+    float: right;
+}
+
+.pagination-btns button {
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.btn-disable {
+    border: 1px solid #bfc3c5;
+    color: #b7babe;
+}
+
+.btn-active {
+    background-color: #7749f8;
+    color: white;
+}
+
+.btn-enable {
+    border: 1px solid #bfc3c5;
+    color: #7749f8;
+    ;
+}
+
+
+.cards {
+    padding: 5em 0;
+    margin-bottom: 5em;
+}
+
+.card {
+    box-shadow: 1px 1px 10px #8e9193;
+    border-radius: 4px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px #25cc33;
+}
+
+.card1,
+.card2,
+.card3 {
+    float: left;
+    height: auto;
+    width: 15em;
+    background-color: white;
+    margin-right: 5em;
+
+}
+
+.card_header {
+    padding: 1.2em;
+}
+
+.dp_img {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+    padding-right: 0.8em;
+}
+
+.user_info {
+    float: left;
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
+
+
+.ellipsis {
+    float: right;
+}
+
+.post_img {
+    width: 15em;
+    padding: 1.5em, 0;
+}
+
+.interactions {
+    padding: 0.5em 0.5em;
+}
+
+.inter_div {
+    float: left;
+
+}
+
+.inter_icon {
+    width: 1.3em;
+}
+
+#like_ic {
+    padding-left: .5em;
+}
+
+#chat_ic {
+    padding-left: 4.5em;
+}
+
+#share_ic {
+    padding-right: 0.5em;
+    float: right;
+}
+
+.inter_sep {
+    margin: 2em 0.3em 0.5em
+}
+
+.comment_sec {
+    padding: 1em;
+
+}
+
+#comment_sec_dp_img {
+    width: 35px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.cmt_dp {
+    float: left;
+    padding-right: 0.8em;
+}
+
+.comment_box {
+    float: left;
+}
+
+.comment_text {
+    width: 10em;
+    height: 1em;
+}
+
+.head-img {
+    width: 15em;
+    height: 11em;
+}
+
+.play_img {
+    width: 3em;
+    position: relative;
+    top: -2em;
+    left: 6em;
+}
+
+.card-footer {
+    padding: 0 1em 1.5em;
+    text-align: center;
+}
+
+.green-btn {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.post_img_2 {
+    width: 17em;
+    padding: 1.5em 0;
+}
+
+.inter_icon_lk {
+    width: 1.3em;
+    font-size: 0.9em;
+}
+
+.inter-sec {
+    padding: 1em 0.5em;
+}
+
+#card_thr {
+    width: 17em;
+}
+
+.like_cmt {
+    float: right;
+    padding-right: 0.5em;
+}
+
+.page-btn:hover {
+    background-color: #7749f8;
+    color: white;
 }
