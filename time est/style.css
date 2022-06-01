@@ -1,0 +1,70 @@
+nav {
+    padding: 1% 2%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #969da3;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(34, 243, 34);
+    padding-top: 1%;
+}
+
+.navlist {
+    float: right;
+}
+
+.navitems {
+    float: left;
+    padding-right:2em;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.ham-icon {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .ham-icon {
+            padding-left: 90%;
+            padding-top: 5px;
+            display: block;
+            cursor: pointer;
+            padding-top: 0;
+    }
+
+    .ham-icon li {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 6px 0;
+        display: block;
+    }
+
+
+    .navlist {
+        display: none;
+        text-align: center;
+        float: left;
+        margin-bottom: 5em;
+    }
+
+    .navlist li {
+        width: 100%;
+        padding-top: 5em;
+    }
+
+    .navlist.active {
+        display: block;
+        }
+
+
+    
+}

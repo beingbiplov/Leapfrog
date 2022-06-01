@@ -3,6 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* nav css  */
+
 nav {
     width: 100%;
     background-color: #f8f9fa;
@@ -80,4 +82,60 @@ nav ul li {
     cursor: pointer;
 }
 
+/* nav css ends  */
 
+
+.main {
+    padding: 2em 5em;
+}
+
+.colors h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+hr {
+    background-color: #969da3;
+}
+
+.col-box {
+    height: 70px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.primary {
+    
+    background-color: aqua;
+}
+
+.colors h3 {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.color-box h5 {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.color-box span {
+    font-size: 0.5em;
+    color: #969da3;
+    font-size: 0.9em;
+}
+
+.color-box {
+    float: left;
+    margin-right: 2em;
+}
+
+.primary-dark{
+    background-color: #5227CC;
+}
+
+.primary-light {
+    background-color: #EBE5FC;
+}
