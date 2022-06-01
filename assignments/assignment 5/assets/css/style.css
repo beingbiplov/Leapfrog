@@ -178,3 +178,51 @@ hr {
 .tab {
     margin-top: 10em;
 }
+
+.buttons {
+    margin-top: 5em;
+}
+
+.buttons button {
+    border-radius: 5px;
+    padding: .9em 1.7em;
+    margin: 1.5em 0;
+}
+
+.btn-primary {
+    background-color: #7749f8;
+    color: white;
+}
+
+.btn-primary-outline {
+    background-color: white;
+    border: 1px solid #7749f8;
+    color: #7749f8;
+}
+
+.btn-hover-default {
+    background-color: #5227cc;
+    color: white;
+}
+
+.btn-hover-outline {
+    background-color: #7749f8;
+    color: white;
+}
+
+.btn-focus-default {
+    background-color: #5227cc;
+    color: white;
+}
+
+
+.buttons table {
+    width: 50%;
+    text-align: left;
+}
+
+.buttons table tr th {
+    color: #8f8a8a;
+    font-size: 16px;
+    font-weight: lighter;
+}
