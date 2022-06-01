@@ -139,3 +139,42 @@ hr {
 .primary-light {
     background-color: #EBE5FC;
 }
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #8f8a8a;
+    background-color: white;
+    width: 45em;
+}
+
+.tab button {
+    background-color: white;
+    float: left;
+    border: 1px solid #8f8a8a;
+    outline: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tab>button {
+    border-bottom: none;
+}
+
+.tab button:hover {
+    background-color: green;
+    color: white;
+}
+
+.tablinks a {
+    text-decoration: none;
+}
+
+.tabcontent {
+    padding: 6px 0;
+    width: 45em;
+}
+
+.tab {
+    margin-top: 10em;
+}
