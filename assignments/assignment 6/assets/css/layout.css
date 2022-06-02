@@ -1,0 +1,27 @@
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.logo {
+    float: left;
+    width: 10em;
+}
+
+.navlist {
+    float: right;
+    list-style: none;
+}
+
+.navitem {
+    float: left;
+    padding-left: 3.1em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #212832;
+}
+

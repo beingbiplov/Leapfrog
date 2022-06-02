@@ -1,0 +1,26 @@
+
+.navlist--btn {
+    padding: 0.53rem 1.31rem 0.53rem 1.57rem;
+    border: 1px solid #212832;
+    border-radius: 5px;
+}
+
+.navitem:hover {
+    color: #f1a501;
+    transition: 0.3s;
+}
+
+.navlist--btn:hover {
+    background-color: #f1a501;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navitem--dropdown {
+    width: 0.5rem;
+    padding-left: 0.5em;
+}
+
+.navitem--langchoice{
+    font-weight: 500;;
+}
