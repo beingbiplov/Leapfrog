@@ -532,3 +532,108 @@ nav {
 .float_card--right > p > span {
     color: #8A79DF;
 }
+
+/* bookings section ends  */
+
+/* testimonial section  */
+
+.testimonials {
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.testimonial_left {
+    float: left;
+    width: 50%;
+}
+
+.testimonial_right {
+    float: right;
+    width: 50%;
+}
+
+.pagination_dots {
+    padding-top: 5.125rem;
+}
+
+.pagination_dots span {
+    padding-right: 1.5625rem;
+}
+
+.testimonial__card_main {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+    padding: 1.75rem 4.25rem 2.125rem 2.125rem;
+    width: 80%;
+    position: relative;
+    position: relative;
+    top: -3rem;
+    left: 2rem;
+    z-index: -1;
+}
+
+.testimonial__card_main:hover {
+    filter: drop-shadow(0px 100px 80px rgba(21, 18, 18, 0.05)) drop-shadow(0px 64.8148px 46.8519px rgba(22, 18, 18, 0.015)) drop-shadow(0px 38.5185px 25.4815px rgba(17, 14, 14, 0.012)) drop-shadow(0px 20px 13px rgba(18, 15, 15, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(28, 22, 22, 0.008)) drop-shadow(0px 1.85185px 3.14815px rgba(27, 21, 21, 0.005));
+    transition: 0.3s;
+}
+
+.testimonial__card_content {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #5E6282;
+}
+
+.testimonial__card_name{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #5E6282;
+    margin-top: 2.125rem;
+    margin-bottom: 0.3125rem;
+}
+
+.testimonial__card_addr {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.31rem25;
+    color: #5E6282;
+}
+
+.testimonial__card_bg {
+    border: 2px solid #F7F7F7;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 10px;
+    border-radius: 10px;
+    padding: 1.75rem 4.25rem 2.125rem 2.125rem;
+    width: 80%;
+    position: relative;
+    position: relative;
+    top: -12rem;
+    left: 5rem;
+    z-index: -2;
+}
+
+/* .arrows {
+    position: relative;
+    position: relative;
+    top: -27rem;
+    left: 38rem;
+    width: 0;
+} */
+
+.arrow_up {
+    margin-bottom: 3.59375rem;
+}
+
+.testimonial_right_section_left {
+    float: left;
+    width: 99%;
+}
+
+.arrows {
+    float: right;
+    width: 1%;
+    padding-top: 9rem;
+}

@@ -75,6 +75,27 @@
         padding-right: 0;
     }
 
+    .testimonial_left {
+        width: 100%;
+    }
+
+    .testimonial_right {
+        width: 100%;
+    }
+
+    .pagination_dots {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .testimonial_right_section_left {
+        width: 80%;
+    }
+
+    .arrows {
+        width: 20%;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -137,9 +158,21 @@
     .step_img img {
         padding-bottom: 2rem;
     }
-    
+
     .hero__info__h1 {
         font-size: 2.5rem;
         line-height: 4rem;
+    }
+
+    .testimonial_right_section_left {
+        width: 95%;
+    }
+
+    .arrows {
+        width: 5%;
+    }
+
+    .testimonial__card_bg {
+        display: none;
     }
 }
