@@ -736,3 +736,92 @@ nav {
     z-index: -1;
     margin-bottom: -153px;
 }
+
+footer {
+    padding: 5rem 0;
+}
+
+.footer_content {
+    width: 100%;
+}
+
+.footer_row {
+    float: left;
+    width: 20%;
+}
+
+.foot_logo {
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 66px;
+    color: #181E4B;
+    margin-bottom: 19px;
+    margin-top: 0;
+    padding-right: 1rem;
+}
+
+.footer_desc{
+    font-weight: 500;
+        font-size: 13px;
+        line-height: 124.5%;
+        color: #5E6282;
+}
+
+.foot_head {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+    padding-left: 2rem;
+}
+
+.footer_row ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.footer_row ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    padding-bottom: 12px;
+    color: #5E6282;
+}
+
+.logo{
+    width: 100%;
+    padding-bottom: 1.625rem;
+}
+.logo-item{
+    width: 2.5625rem;
+    margin-right: 1.5625rem;
+}
+
+.logo_p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124.5%;
+    letter-spacing: 0.005em;
+    color: #5E6282;
+}
+.stores {
+    width: 100%;
+}
+
+.stores a {
+    margin-right: 7px;
+}
+
+.copyright h5{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #5E6282;
+    text-align: center;
+}
+
+.copyright h5 {
+    margin: 0;
+    padding-bottom: 4.9rem;
+}
+

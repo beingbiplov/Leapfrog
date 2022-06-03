@@ -111,6 +111,11 @@
         padding-bottom: 3rem;
     }
 
+    .footer_row {
+        width: 33%;
+        padding-bottom: 5rem;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -214,5 +219,10 @@
 
     .subs_box {
         border-radius: 20px 20px 20px 20px;
-}
+    
+    }
+
+    .footer_row {
+        width: 50%;
+    }
 }
