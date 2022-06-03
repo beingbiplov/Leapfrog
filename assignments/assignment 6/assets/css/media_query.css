@@ -100,6 +100,17 @@
         width: 33%;
         }
 
+    .subs_bg_decor {
+        display: none;
+    }
+    .subs_box_head {
+        font-size: 1.875rem;
+    }
+
+    .subs_box {
+        padding-bottom: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -187,4 +198,21 @@
     .brand .brand_sm_height {
         padding-bottom: 4rem;
         }
+    .subs_box_head {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.2rem;
+    }
+    .subs-form input {
+        width: 100%;
+    }
+    .btn-submit {
+        padding: 1.250rem 3rem;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .subs_box {
+        border-radius: 20px 20px 20px 20px;
+}
 }

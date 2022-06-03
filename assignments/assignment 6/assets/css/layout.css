@@ -633,6 +633,7 @@ nav {
 
 .brands {
     width: 100%;
+    padding-bottom: 7.75rem;
 }
 
 .brand {
@@ -646,7 +647,92 @@ nav {
     margin: 0 auto;
 }
 
+/* brand section ends  */
+
+/* subs section  */
+
+.subs_box {
+    background: #f9f7fe;
+    border-radius: 129px 20px 20px 20px;
+    margin-bottom: 5rem;
+}
+
 .brand .brand_sm_height {
     height: 2rem;
     padding-top: 3rem;
+}
+
+.subs_box_head{
+    padding: 4.9375rem 9.0625rem;
+    font-weight: 600;
+    font-size: 2.0625rem;
+    line-height: 54px;
+    text-align: center;
+    color: #5E6282;
+}
+
+.subs-form input{
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 26.3125rem;
+    height: 68px;
+    margin-bottom: 5rem;
+    border: 1px solid #FFFFFF;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 17px;
+    color: #39425D;
+    padding-left: 2.5rem;
+}
+
+.btn-submit {
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    border-radius: 10px;
+    padding: 1.375rem 3.125rem;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subs-form {
+    width: 55%;
+    margin: 0 auto;
+}
+
+
+.subs_bg_decor1 {
+    width: 35%;
+    position: relative;
+    top: -20rem;
+    opacity: 0.1;
+    margin-bottom: -20rem;
+}
+
+.subs_bg_decor2 {
+    width: 18%;
+    position: relative;
+    top: -50.5rem;
+    margin-bottom: -40rem;
+    left: 35.5rem;
+    opacity: 0.1;
+}
+
+.corner-decor {
+    position: relative;
+    margin-bottom: -70px;
+    top: -30rem;
+    left: 32rem;
+}
+
+.subs_side_decor {
+    position: relative;
+    left: 27rem;
+    top: -5rem;
+    z-index: -1;
+    margin-bottom: -153px;
 }
