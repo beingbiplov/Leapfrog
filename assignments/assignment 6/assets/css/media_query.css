@@ -63,6 +63,18 @@
         display: none;
     }
 
+    .bookings__right {
+        width: 100%;
+    }
+
+    .bookings__left {
+        width: 100%;
+    }
+
+    .bookings__subhead, .booking__left__steps, .bookings__head {
+        padding-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -99,12 +111,35 @@
         padding: 1rem 0;
     }
 
-        .category__cards--card {
-            width: 100%;
-        }
+    .category__cards--card {
+        width: 100%;
+    }
+
+    .category__header--plusdecor {
+        opacity: 0.7;
+        z-index: -1;
+    }
+
+    .boolings__right__card--float_card {
+        display: none;
+    }
+
+    .boolings__right__card {
+        margin-top: 3rem;
+        margin-bottom: 13rem;
+    }
+
+    .bookings__head {
+        font-size: 2.125rem;
+        line-height: 3rem;
+    }
+
+    .step_img img {
+        padding-bottom: 2rem;
+    }
     
-        .category__header--plusdecor {
-            opacity: 0.7;
-            z-index: -1;
-        }
+    .hero__info__h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
 }

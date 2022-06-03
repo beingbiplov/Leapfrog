@@ -66,8 +66,8 @@ nav {
 .hero__info__h1 {
     font-family: 'Volkhov';
     font-weight: 700;
-    font-size: 84px;
-    line-height: 89px;    
+    font-size: 5.25rem;
+    line-height: 5.5625rem;    
     letter-spacing: -0.04em;
     color: #181E4B;
     margin: 0;
@@ -319,4 +319,216 @@ nav {
         width: 6rem;
         margin: 0;
         margin-right: 0;
+        height: 0;
+}
+
+/* destinations section ends  */
+
+/* booking section  */
+
+.bookings {
+    width: 100%;
+}
+
+.bookings__left {
+    width: 50%;
+    float: left;
+}
+
+.bookings__right {
+    width: 50%;
+    float: right;
+}
+
+
+.bookings__subhead {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #5E6282;
+    margin: 0;
+}
+
+.bookings__head {
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4rem;
+    text-transform: capitalize;
+    color: #14183E;
+    margin-top: 0.9375rem;
+    margin-bottom: 2.1875rem;
+    padding-right: 5rem;
+}
+
+.booking__left__steps {
+    padding-right: 10rem;
+}
+
+.step_img {
+    float: left;
+    padding-right: 1.3125rem;
+}
+
+.step_img img {
+    width: 2.9375rem;
+}
+
+.step_info  h5{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 124.5%;
+    color: #5E6282;
+    margin-bottom: 0.25rem;
+}
+
+.step_info p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 124.5%;
+    color: #5E6282;
+    margin-top: 0;
+}
+
+.step {
+    margin-bottom: 3rem;
+}
+
+.bookings__left__step {
+    padding-right: 25%;
+}
+
+.bookings__right__content {
+    width: 100%;
+}
+
+.boolings__right__card{
+    width: 60%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+    padding: 1.25rem 1.5625rem 1.9375rem 1.25rem ;
+}
+
+.boolings__right__card:hover {
+    filter: drop-shadow(0px 100px 80px rgba(21, 18, 18, 0.05)) drop-shadow(0px 64.8148px 46.8519px rgba(22, 18, 18, 0.015)) drop-shadow(0px 38.5185px 25.4815px rgba(17, 14, 14, 0.012)) drop-shadow(0px 20px 13px rgba(18, 15, 15, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(28, 22, 22, 0.008)) drop-shadow(0px 1.85185px 3.14815px rgba(27, 21, 21, 0.005));
+    transition: 0.3s;
+}
+
+
+.boolings__right__card--img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 24px;
+}
+
+.boolings__right__card--head {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 124.5%;
+    letter-spacing: 0.015em;
+    color: #080809;
+    margin-top: 1.425rem;
+    margin-bottom: 0.8125rem;
+}
+
+.boolings__right__card--p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: -0.005em;
+    color: #84829A;
+}
+
+.boolings__right__card--icons {
+    padding-top: 1.2rem;
+}
+
+.boolings__right__card--icons img {
+    background: #F5F5F5;
+    border-radius: 50%;
+    margin-right: 1.125rem;
+}
+
+.boolings__right__card--footer {
+    padding-top: 1.8125rem;
+}
+
+.boolings__right__card--footer--img {
+    float: left;
+}
+
+.boolings__right__card--footer--p {
+    float: left;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 124.5%;
+    letter-spacing: -0.02em;
+    color: #84829A;
+    padding-left: 0.9375rem;
+}
+
+.boolings__right__card--footer--icon {
+    float: right;
+}
+
+.boolings__right__card--float_card {
+    padding: 1.5625rem 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+    width: 48%;
+    position: relative;
+    top: -13rem;
+    left: 20.5rem;
+}
+
+.boolings__right__card--float_card:hover {
+    filter: drop-shadow(0px 100px 80px rgba(21, 18, 18, 0.05)) drop-shadow(0px 64.8148px 46.8519px rgba(22, 18, 18, 0.015)) drop-shadow(0px 38.5185px 25.4815px rgba(17, 14, 14, 0.012)) drop-shadow(0px 20px 13px rgba(18, 15, 15, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(28, 22, 22, 0.008)) drop-shadow(0px 1.85185px 3.14815px rgba(27, 21, 21, 0.005));
+    transition: 0.3s;
+}
+
+.float_card--left--avatar{
+    border-radius: 50%;
+    float: left;
+
+}
+
+.float_card--right {
+    float: left;
+    padding-left: 1rem;
+}
+
+.float_card--right h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 124.5%;
+    letter-spacing: -0.015em;
+    color: #080809;
+}
+
+.float_card--right p {
+    margin: 0;
+    padding-top: 0.875rem;
+}
+
+.float_card--right > span {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 124.5%;
+    letter-spacing: -0.035em;
+    color: #84829A;
+}
+
+.float_card--right > p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 124.5%;
+    letter-spacing: -0.055em;
+}
+
+.float_card--right > p > span {
+    color: #8A79DF;
 }
