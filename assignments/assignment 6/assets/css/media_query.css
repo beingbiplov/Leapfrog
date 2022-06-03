@@ -96,6 +96,10 @@
         width: 20%;
     }
 
+    .brand {
+        width: 33%;
+        }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -175,4 +179,12 @@
     .testimonial__card_bg {
         display: none;
     }
+
+    .brand {
+        width: 50%;
+    }
+
+    .brand .brand_sm_height {
+        padding-bottom: 4rem;
+        }
 }

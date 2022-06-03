@@ -538,7 +538,7 @@ nav {
 /* testimonial section  */
 
 .testimonials {
-    padding: 5rem 0;
+    padding-top: 5rem;
     width: 100%;
 }
 
@@ -615,13 +615,6 @@ nav {
     z-index: -2;
 }
 
-/* .arrows {
-    position: relative;
-    position: relative;
-    top: -27rem;
-    left: 38rem;
-    width: 0;
-} */
 
 .arrow_up {
     margin-bottom: 3.59375rem;
@@ -636,4 +629,24 @@ nav {
     float: right;
     width: 1%;
     padding-top: 9rem;
+}
+
+.brands {
+    width: 100%;
+}
+
+.brand {
+    float: left;
+    width: 20%;
+}
+
+.brand img {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin: 0 auto;
+}
+
+.brand .brand_sm_height {
+    height: 2rem;
+    padding-top: 3rem;
 }
