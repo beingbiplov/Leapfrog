@@ -1,0 +1,110 @@
+
+@media screen and (max-width: 1200px) {
+
+    .nav-default-screen {
+        display: none;
+        text-align: center;
+        margin-top: 6rem;
+
+    }
+
+    .navitem {
+        width: 100%;
+        padding: 1.5rem 0;
+        font-size: 2rem;
+    }
+    
+    .nav-sm-screen {
+        display: block;
+        float: right;
+    }
+
+    .nav-default-screen.active {
+        display: block;
+    }
+
+    .header-bgimg__right {
+        width: 40%;
+        height:50%;
+    }
+
+    .hero__info__h1--decor {
+        display: none;
+    }
+
+    .hero__img img {
+        width: 90%;
+    }
+    .hero__info__p {
+        padding-right: 0;
+    }
+
+    .hero__info__p, .hero__info__btns {
+        width:150% ;
+    }
+    .hero__info__h1 {
+        width: 132%;
+    }
+
+    .category__cards--card {
+        width: 50%;
+    }
+
+    .category__header--plusdecor {
+        opacity: 0.7;
+        z-index: -1;
+    }
+
+    .destination__cards--card {
+        width: 100%;
+    }
+
+    .destination__cards--card--content3_decor {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .header-bgimg__right {
+            width: 60%;
+            height: 57%;
+            position: absolute;
+            top: 0;
+            right:0% ;
+        }
+
+    .hero__img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero__info--btn1 {
+        margin-bottom: 2rem;
+        margin-left: 9%;
+    }
+
+    .hero__info--btn2 img{
+        padding-left: 0;
+    }
+
+    .hero__info__btns {
+        width: 120%;
+    }
+    .hero__info--btn-trns {
+        float: left;
+    }
+
+    .hero__info__btns {
+        padding: 1rem 0;
+    }
+
+        .category__cards--card {
+            width: 100%;
+        }
+    
+        .category__header--plusdecor {
+            opacity: 0.7;
+            z-index: -1;
+        }
+}

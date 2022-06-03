@@ -24,3 +24,18 @@
 .navitem--langchoice{
     font-weight: 500;;
 }
+
+.hero__info__h1--decor {
+    position: relative;
+    top: -14.5rem;
+    left: 14.8rem;
+    z-index: -1;
+}
+
+.hero__info--btn1:hover {
+    background-color: #de9404;
+}
+
+.hero__info--btn-trns:hover {
+    color: #f1a501;
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
     <title>Jadoo</title>
 </head>
 <body>
@@ -21,8 +22,10 @@
                 <img src="./assets/images/Logo.png" alt="Jadoo logo">
             </a>
         </div>
+        
+        <span class="ham-icon nav-sm-screen"> &#9776; </span>
 
-        <ul class="navlist">
+        <ul class="navlist nav-default-screen">
             <li class="navitem"><a href="#">Home</a></li>
             <li class="navitem"><a href="#">Hotels</a></li>
             <li class="navitem"><a href="#">Flights</a></li>
@@ -30,11 +33,177 @@
             <li class="navitem"><a href="#">Login</a></li>
             <li class="navitem"><a class="btn navlist--btn .border-box" href="#">signup</a></li>
             <li class="navitem"><a class="navitem--langchoice" href="#">En <img class="navitem--dropdown" src="./assets/images/Vector_dropdown.png" alt="dropdwn"></a></li>
-
+            
         </ul>
+        
+
+        <!-- <ul class="navlist nav-sm-screen">
+            <li class="">
+                <span class="menu"> &#9776; </span>
+            </li>            
+            <li class="">
+                <span class="cross"> &#215; </span>
+            </li>
+        </ul> -->
     </nav>
 
-    <!-- nav section ends  -->
+    <!-- nav section ends -->
+
+    <div class="main">
+
+    <!-- header sectin  -->
+    <header>    
+        <div class="header-bgimg">
+            <img class="header-bgimg__right" src="./assets/images/Decore_only.png" alt="header-bg">
+            <img class="header-bgimg__left" src="./assets/images/Ellipse 8.png" alt="header-bg">
+        </div>
+
+        <section class="hero clearfix">
+            <div class="hero__img">
+                <img src="./assets/images/Image.png" alt="hero image">
+            </div>
+            <div class="hero__info border-box">
+                <h5>Best Destinations around the world</h5>
+                
+                <h1 class="border-box hero__info__h1">Travel, enjoy and live a new and full life</h1>
+                <span><img class="hero__info__h1--decor" src="./assets/images/Decore (1).png" alt=""></span>
+
+                <p class="hero__info__p border-box">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate
+                sell they west hard for the.</p>
+
+                <section class="hero__info__btns border-box">
+                    <a href="#" class="hero__info--btn1 btn border-box">Find out more</a>
+                    <a href="#" class="hero__info--btn2 border-box"><img src="./assets/images/play_btn.svg" alt="play button"></a>
+                    <a href="#" class="border-box hero__info--btn-trns">Play Demo</a>
+
+                </section>
+
+            </div>
+            
+
+        </section>
+    </header>
+    <!-- header section ends  -->
+
+    <!-- category section  -->
+    <section class="category clearfix">
+        <div class="category__header">
+            <img class="category__header--plusdecor" src="./assets/images/Group 4 +.png" alt="decor">
+            <h5 class="heading_small"> CATEGORY </h5>
+            <h2 class="heading_big">We Offer Best Services</h2> 
+        </div>
+
+        <sectin class="category__cards">
+
+            <div class="category__cards--card category__cards--card1">
+                <img class="category__cards--card--img" src="./assets/images/Group 48.png" alt="card img">
+                <h5 class="category__cards--card--header"><a href="#"> Calculated Weather </a></h5>
+                <p class="category__cards--card--p">Built Wicket longer admire do barton vanity itself do in it.</p>
+                <div class="card1__tail"></div>
+            </div>
+
+            <div class="category__cards--card category__cards--card2">
+                <img class="category__cards--card--img" src="./assets/images/Group 51@2x.png" alt="card img">
+                <h5 class="category__cards--card--header"> <a href="#"> Best Flights </a></h5>
+                <p class="category__cards--card--p">Engrossed listening. Park gate sell they west hard for the.</p>
+                <!-- <img class="card_tail" src="./assets/images/card_tail.png" alt=""> -->
+                <div class="card2__tail"></div>
+            </div>
+            
+
+            <div class="category__cards--card category__cards--card3">
+                <img class="category__cards--card--img" src="./assets/images/Group 50.png" alt="card img">
+                <h5 class="category__cards--card--header"><a href="#"> Local Events </a></h5>
+                <p class="category__cards--card--p">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                <div class="card3__tail"></div>
+            </div>
+
+            <div class="category__cards--card category__cards--card4">
+                <img class="category__cards--card--img" src="./assets/images/Group 49.png" alt="card img">
+                <h5 class="category__cards--card--header"><a href="#"> Customization </a></h5>
+                <p class="category__cards--card--p">We deliver outsourced aviation services for military customers</p>
+                <div class="card4__tail"></div>
+            </div>
+
+        </sectin>
+    </section>
+
+    <!-- category section ends  -->
+
+    <!-- destinations section  -->
+ 
+    <section class="destinations clearfix">
+        <div class="category__header">
+            <h5 class="heading_small"> Top Selling </h5>
+            <h2 class="heading_big">Top Destinations</h2>
+        </div>
+
+        <section class="destination__cards clearfix">
+            <div class="destination__cards--card">
+                <div class="destination__cards--card--content">
+                    <img src="./assets/images/dest1.png" alt="card background">
+                    <a href="#">
+                        <section class="card_footer">
+                            <div class="top_section clearfix">
+                                <h6 class="destination__cards--location">Rome, Italty</h6>
+                                <span class="destination__cards--price">$5,42k</span>
+                            </div>
+                            <img src="./assets/images/Vector.png" alt="">
+                            <span class="destination__cards--days">10 Days Trip</span>
+                        </section>
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination__cards--card">
+                <div class="destination__cards--card--content">
+                    <img src="./assets/images/dest2.png" alt="card background">
+                    <a href="#">
+                        <section class="card_footer">
+                            <div class="top_section clearfix">
+                                <h6 class="destination__cards--location">London, UK</h6>
+                                
+                                <span class="destination__cards--price">$4.2k</span>
+                            </div>
+                            <img src="./assets/images/Vector.png" alt="">
+                            <span class="destination__cards--days">12 Days Trip</span>
+                        </section>
+                    </a>
+                </div>
+            </div>
+
+            <div class="destination__cards--card">
+                <div class="destination__cards--card--content" id="card3">
+                    
+                    <img src="./assets/images/dest3.png" alt="card background">
+                    <a href="#">
+                        <section class="card_footer">
+                            <div class="top_section clearfix">
+                                <h6 class="destination__cards--location">Full Europe</h6>
+            
+                                <span class="destination__cards--price">$15k</span>
+                            </div>
+                            <img src="./assets/images/Vector.png" alt="">
+                            <span class="destination__cards--days">28 Days Trip</span>
+                        </section>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="destination__cards--card--content3_decor">
+                <img src="./assets/images/Decore (2).png" alt="">
+            </div>
+
+
+        </section>
+
+    </section>
+
+    <!-- top destinations section ends  -->
+
+
+    </div>
     
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
