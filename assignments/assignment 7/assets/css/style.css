@@ -6,7 +6,7 @@
     color: #252641;
 }
 
-.navitem:hover {
+.navitem:hover, .hero_info--btns-3:hover {
     color: #65daff;
     transition: 0.3s;
 }
@@ -38,7 +38,7 @@
     padding: 0.875rem 2.3125rem;
 }
 
-.btn-signup:hover {
+.btn-signup:hover, .hero_info--btns-1:hover {
     box-shadow: 0px 20px 24px rgb(80 57 57 / 15%);
     transition: 0.3s;
 }
@@ -84,3 +84,7 @@
     color: #252641;
 }
 
+
+.brands__logo_item img:hover {
+    box-shadow: 0px 20px 24px rgb(80 57 57 / 16%);
+}
