@@ -1,0 +1,79 @@
+
+/* tab view  */
+@media screen and (min-width: 576px) {
+    .navlist {
+        display: none;
+    }
+
+    #toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 70%;
+    }
+    .hero_info--btns{
+        display: block;
+    }
+
+    .hero_info--btns-1{
+        float: left;
+    }
+
+    .btn-2 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .hero_info--btns-1 {
+        margin-right: 3rem;
+    }
+
+}
+
+
+/* desktop view  */
+@media screen and (min-width: 1199px) {
+    .logo {
+            display: flex;
+            align-items: center;
+            width: 30%;
+        }
+
+    .logo--icon {
+        width: 5.1875rem;
+    }
+
+    .logo--text {
+        font-size: 2rem;
+    }
+
+
+    .navlist {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        flex-flow: row;
+    }
+
+    nav {
+        flex-flow: row;
+    }
+    
+    #toggle {
+        display: none;
+    }
+
+    .hero {
+        flex-flow: row-reverse;
+    }
+
+    nav {
+        padding-top: 1rem;
+    }
+    .hero_info {
+        width: 100%;
+    }
+    .hero_info--heading {
+        font-size: 3.375rem;
+    }
+}

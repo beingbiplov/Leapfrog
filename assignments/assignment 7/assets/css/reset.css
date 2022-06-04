@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.main, header {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.header_full {
+    background-color: #FFF2E1;
+    /* border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 50%; */
+}

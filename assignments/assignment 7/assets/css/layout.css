@@ -1,0 +1,121 @@
+
+nav {
+    padding-top: 2.75rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo--icon {
+    width: 4.1875rem;
+}
+
+.logo--text {
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    color: #113C49;
+    position: relative;
+    font-size: 1.5rem;
+    top: 0rem;
+    right: 42px;
+}
+
+#toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.navlist{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navlist.active {
+    display: flex;
+}
+
+ .hero {
+     width: 100%;
+     display: flex;
+     padding: 3rem 0;
+     flex-flow: column;
+ }
+
+ .hero_img {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding-bottom: 5rem;
+ }
+
+ .hero_img img {
+     width: 80%;
+ }
+
+ .hero_info {
+     justify-content: center;
+ }
+
+ .hero_info--heading {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 5.0625rem;
+    margin-bottom: 2.125rem;
+    
+ }
+
+ .hero_info--heading span {
+    color: #F48C06;
+ }
+
+ .hero_info--p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #464646;
+    width: 80%;
+    margin-right: auto;
+ }
+
+ .hero_info--btns-2 img {
+     width: 2rem;
+     padding-right: 1%;
+ }
+
+ .btn-2 {
+     display: flex;
+     margin-top: 3rem;
+ }
+
+ .brands__logo_sectin {
+     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+     
+ }
+
+ .brands__heading {
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #696984;
+    text-align: center;
+}
+
+.brands__logo_item img{
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-left: 20%;
+}
