@@ -26,6 +26,20 @@
 
     .hero_info--btns-1 {
         margin-right: 3rem;
+    } 
+
+    .what_img_section--card--head {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;;
+    }
+
+    .what_img_section--btn {
+        padding: 24px 38px;
+        font-size: 1.375rem;
+    }
+
+    .what_img_section--card-content {
+        top: -17rem;
     }
 
 }
@@ -76,4 +90,29 @@
     .hero_info--heading {
         font-size: 3.375rem;
     }
+
+    .features__cards {
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .features__cards--card{
+        margin: 0 3%;
+    }
+
+    .what_img_section--card img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .features__subheading , .what__subheading {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    .what_img_section{
+        justify-content: end;
+    }
+    
 }

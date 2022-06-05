@@ -38,7 +38,7 @@
     padding: 0.875rem 2.3125rem;
 }
 
-.btn-signup:hover, .hero_info--btns-1:hover {
+.btn-signup:hover, .hero_info--btns-1:hover, .what_img_section--btn:hover {
     box-shadow: 0px 20px 24px rgb(80 57 57 / 15%);
     transition: 0.3s;
 }
@@ -84,7 +84,60 @@
     color: #252641;
 }
 
+ .hero_info--heading {
+     font-weight: 700;
+     font-size: 3.125rem;
+     line-height: 5.0625rem;
+     margin-bottom: 2.125rem;
+     color: #2f327d;
+
+ }
+
+ .hero_info--heading span {
+     color: #F48C06;
+ }
 
 .brands__logo_item img:hover {
     box-shadow: 0px 20px 24px rgb(80 57 57 / 16%);
+}
+
+
+.features__heading{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 180%;
+    color: #2F327D;
+    text-align: center;
+}
+
+.features__heading span {
+    color: #F48C06;
+}
+
+.features__subheading {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 180%;
+    text-align: center;
+    color: #696984;
+}
+
+.what__heading {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 180%;
+    color: #2F327D;
+    text-align: center;
+}
+
+.what__heading span {
+    color: #F48C06;
+}
+
+.what__subheading {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 180%;
+    text-align: center;
+    color: #696984;
 }
