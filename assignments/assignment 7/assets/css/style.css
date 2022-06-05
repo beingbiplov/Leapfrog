@@ -234,3 +234,61 @@
 
     color: #696984;
 }
+
+.platform-img {
+    width: 80%;
+    margin: 5rem 10%;
+}
+
+.platform-head {
+    font-size: 2.25rem;
+}
+
+.platform-p {
+    font-size: 1.5rem;
+}
+
+.heading-top {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    color: #525596;
+    padding-bottom: 33px;
+}
+
+.line-hr {
+    padding-bottom: 0.5rem;
+}
+
+.testimonial-btn {
+    padding-right: 0;
+    border-right: none;
+    font-size: 1rem;
+}
+
+.testimonial-btn span {
+    border: 1px solid #F48C06;
+    border-radius: 80px;
+    padding: 1.1875rem 2.375rem;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+}
+
+.testimonial-btn span:hover {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #F48C06;
+    
+}
+
+.review-img {
+    width: 60%;
+    margin: 0 20%;
+    border-radius: 20px;
+}
+
+.testimonial-arrow:hover {
+    width: 10.5rem;
+    transition: 0.3s;
+}

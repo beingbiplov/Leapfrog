@@ -53,6 +53,14 @@
         font-size: 1.25rem;
     }
 
+    .testimonial-arrow{
+        width: 10rem;
+        top: -25rem;
+    }
+
+    .testimonial_cards__card {
+        top: -15rem;
+    }
 }
 
 
@@ -161,6 +169,7 @@
 
     .our_features__main {
         display: flex;
+        padding-top: 3rem;
     }
 
     .our_features__img_section {
@@ -196,5 +205,85 @@
     
     .tools--info--heading {
         padding-right: 7rem;
+    }
+
+    .quiz-main {
+        flex-flow: row;
+    }
+
+    .quiz-info {
+        padding-right: 10rem;
+    }
+
+    .width-100-img {
+        width: 100%;
+        margin:0;
+    }
+
+    .what_img_section {
+        flex-flow: row ;
+    }
+
+    .platform {
+        display: flex;
+        padding-top: 3rem;
+    }
+
+    .platform-p {
+        padding: 0;
+        padding-bottom: 0;
+    }
+    .platform-img {
+        width: 75%;
+        margin-left: 5%;
+    }
+
+    .width-40 {
+        width: 40%;
+    }
+
+    .width-60 {
+        width: 60%;
+    } 
+
+    .platform-info {
+        padding-left: 10%;
+        padding-top: 0;
+        padding-right: 1rem;
+    }
+
+    .platform-head {
+        padding-right: 1rem;
+    }
+
+    .review-img {
+        width: 60%;
+    }
+
+    .tcc-p {
+        font-size: 1.375rem;
+    }
+    
+    .user-rating span {
+        font-size: 1.5rem;
+    }
+
+    .rating p {
+        font-size: 1.125rem;
+    }
+    .user-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonial_cards__card {
+        left: 10.5%;
+        top: -21rem;
+        border-left: 14px solid #F77766;;
+    }
+
+    .testimonial-arrow {
+        left: 60%;
     }
 }
