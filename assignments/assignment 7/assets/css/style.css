@@ -264,7 +264,7 @@
 .testimonial-btn {
     padding-right: 0;
     border-right: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .testimonial-btn span {
@@ -291,4 +291,47 @@
 .testimonial-arrow:hover {
     width: 10.5rem;
     transition: 0.3s;
+}
+
+.news_main {
+    padding-bottom: 5rem;
+}
+
+.news_list--btn {
+    font-weight: 400;
+    font-size: 0.5rem;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #252641;
+    background-color: #F4C467;
+    border-radius: 80px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 3rem;
+}
+
+.news_list--info--heading {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 180%;
+    color: #252641;
+    margin-top: 0;
+
+}
+
+.news_list--info--p {
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+
+    color: #696984;
+}
+
+.vline {
+    /* padding: 75px 0.2rem 0 0.2rem; */
+    color:#696984 ;
+    color: #696984;
+    padding: 0.2rem 1rem;
 }
