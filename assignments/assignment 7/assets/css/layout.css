@@ -411,6 +411,11 @@ nav {
     color: #252641;
 }
 
+.news_main--heading:hover, .news_list--info--heading:hover {
+    color: #2F327D;
+    transition: 0.3s;
+}
+
 .news_section--p {
     font-weight: 400;
     font-size: 1.25rem;
@@ -530,6 +535,11 @@ footer {
     margin-left: 0.5rem;
 }
 
+.subs-btn:hover{
+    background-color: rgb(19, 27, 238);
+    transition: 0.3s;
+}
+
 .sec3 {
     display: flex;
     justify-content: center;
@@ -550,6 +560,11 @@ footer {
     color: #B2B3CF;
     padding-right: 4px;
     margin-top: 0;
+}
+
+.sec4 h3:hover{
+    color: #FFFFFF; 
+    transition: 0.3s;
 }
 
 .sec5 {

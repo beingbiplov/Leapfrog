@@ -335,3 +335,9 @@
     color: #696984;
     padding: 0.2rem 1rem;
 }
+
+
+.news_list--btn:hover , .news_section--btn:hover{
+    background-color: #F48C06;
+    transition: 0.3s;
+}
