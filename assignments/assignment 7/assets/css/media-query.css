@@ -42,6 +42,10 @@
         top: -17rem;
     }
 
+    .what_can_section__info--head {
+        font-size: 2.75rem;
+    }
+
 }
 
 
@@ -114,5 +118,39 @@
     .what_img_section{
         justify-content: end;
     }
+
+    .what_can_section {
+        display: flex;
+    }
+
+    .what_can_section__img--bottom_Corner {
+        right: 0%;
+    }
+
+    .what_can_section__info {
+        width: 50%;
+    }
+
+    .what_can_section__img {
+        width: 50%;
+    }
+
+    .what_can_section__img--img {
+        width: 90%;
+    }
+
+    .what_can_section__info--head {
+        margin-top: 0;
+        font-size: 2.25rem;
+    }
+
+    .what_can_section__info--cir-big{
+        top:2.5rem
+    }
+    .what_can_section__img--play_btn {
+        width: 8%;
+        left: 47%;
+    }
+
     
 }

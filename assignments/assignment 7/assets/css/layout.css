@@ -214,3 +214,53 @@ nav {
     background-color: rgba(35, 189, 238, 0.9);
     border: 1px solid rgba(35, 189, 238, 0.9);
 }
+
+.what_can_section__info--cir-big {
+    position: absolute;
+    top: 5rem;
+    z-index: -1;
+}
+
+.what_can_section__info--cir-sm {
+    position: absolute;
+    right: 0;
+    top: 70%;
+    z-index: -1;
+}
+
+.what_can_section__info {
+    padding: 3rem 0;
+    position: relative;
+}
+
+.what_can_section__img {
+    position: relative;
+}
+
+.what_can_section__img--img {
+    width: 86%;
+    margin: 0 7% 0;
+}
+
+.what_can_section__img--top_Corner {
+    position: absolute;
+    z-index: -1;
+    top: -1rem;
+    left: 4%;
+    width: 20%;
+}
+
+.what_can_section__img--bottom_Corner {
+    position: absolute;
+    z-index: -1;
+    width: 20%;
+    right: 3%;
+    bottom: 0;
+}
+
+.what_can_section__img--play_btn {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 46%;
+}
