@@ -240,6 +240,7 @@ nav {
 .what_can_section__img--img {
     width: 86%;
     margin: 0 7% 0;
+    border-radius: 20px;
 }
 
 .what_can_section__img--top_Corner {
@@ -255,7 +256,7 @@ nav {
     z-index: -1;
     width: 20%;
     right: 3%;
-    bottom: 0;
+    bottom: -0.8rem;
 }
 
 .what_can_section__img--play_btn {
@@ -264,3 +265,21 @@ nav {
     top: 40%;
     left: 46%;
 }
+
+.our_features {
+    padding: 5rem  0;
+}
+
+.our_features__img_section--img {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.tools{
+    padding-top: 5rem;
+}
+
+.tools_img_section--img {
+    width: 100%;
+}
+

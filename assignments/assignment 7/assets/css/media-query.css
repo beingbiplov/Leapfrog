@@ -44,6 +44,13 @@
 
     .what_can_section__info--head {
         font-size: 2.75rem;
+    } 
+
+    .our_features--info--heading {
+        font-size: 2.25rem;
+    }
+    .feat--p {
+        font-size: 1.25rem;
     }
 
 }
@@ -152,5 +159,42 @@
         left: 47%;
     }
 
+    .our_features__main {
+        display: flex;
+    }
+
+    .our_features__img_section {
+        width: 50%;
+    }
+
+    .our_features--info {
+        width: 50%;
+    }
+
+    .tools_main {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    .tools_img_section {
+        width: 50%;
+    }
+
+    .tools--info {
+        width: 50%;
+    }
+
+    .tools_img_section--img {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .tools--info {
+        padding-top: 5rem;
+        padding-right: 7rem;
+    }
     
+    .tools--info--heading {
+        padding-right: 7rem;
+    }
 }
