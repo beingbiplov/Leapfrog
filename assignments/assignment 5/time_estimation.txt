@@ -1,0 +1,11 @@
+Component                 Estimated Time               Completed Time
+
+
+Navbar                      25 min                         35 min
+Colors                      30 min                         35 min
+Tabs(Typograpgy)            25 min                         22 mins
+Buttons                     15 min                         25 min
+Tables                      25 min                         25 min
+Forms                       30 min                         40 min
+List Group                  25 min                         20 min
+Card                        45 min                         1h 5min
