@@ -47,11 +47,18 @@ header h2 {
     font-size: 17px;
 }
 
-.assignments {
+.assignmet_section {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    align-items: center;
     padding: 3em 0;
+    width: 50%;
+}
+
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .assign-box {
@@ -61,7 +68,7 @@ header h2 {
     margin-bottom: 1em;
     border-radius: 10px;
     box-shadow: 1px 1px 10px #8e9193;
-    width: 40%;
+    width: 80%;
     margin: 0.5rem 30%;
 }
 
@@ -147,4 +154,17 @@ header h2 {
     .personal_details h4 {
         font-size: 0.8rem;
     }
+
+    .assignments {
+        flex-flow: column;
+
+    }
+    .assignmet_section {
+        width: 100%;
+    }
+}
+
+.sec_head {
+    font-size: 22px;
+    color: #888a8c;
 }
