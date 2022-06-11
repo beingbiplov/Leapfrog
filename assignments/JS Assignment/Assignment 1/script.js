@@ -88,7 +88,7 @@ class ball {
     // to check for wall collision 
     wallCollisionDetection() {
         if (this.x >= (canvasWidth - this.w * 1.01)){this.dx=-1}
-        if (this.y > (canvasHeight - this.w * 1.01)){this.dy=-1}
+        if (this.y > (canvasHeight - this.h * 1.01)){this.dy=-1}
         
 
         if (this.x <= 0){this.dx=1}
@@ -106,14 +106,14 @@ class ball {
                 let DX = (this.x + (this.w/2)) - (b2.x + (b2.w/2))
                 let DY = (this.y +(this.h/2)) - (b2.y + (b2.h/2))
 
-                let distance = Math.sqrt(DX*DX + DY*DY)
+                const distance = Math.sqrt(DX*DX + DY*DY)
 
-                let radiusSum = this.w/2 + b2.w/2
+                const radiusSum = this.w/2 + b2.h/2
 
                 if (distance <= radiusSum){
-                
-                    this.dx = -this.dx 
-                    this.dy = -this.dy 
+
+                    this.dx = -this.dx
+                    this.dy = -this.dy           
                 }
             }             
         })          
@@ -175,7 +175,7 @@ let generateBalls = (n) =>{
 
 // add balls to canvas container 
 const AddBallsToCanvas = (()=>{
-    let balls = generateBalls(20)
+    let balls = generateBalls(17)
 
     balls.forEach((b) => {
         const newBall = new ball(b.ballX, b.ballY, b.ballSx, b.ballSy, b.ballDx, b.ballDy, b.ballW, b.ballH)
