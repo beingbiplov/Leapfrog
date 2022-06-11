@@ -1,0 +1,24 @@
+
+a {
+    text-decoration: none;
+}
+
+.reset_btn {
+    text-align: center;
+    padding-top: 5em;
+    box-sizing: border-box;
+}
+
+#reset {
+    padding: 12px 20px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 50px;
+    background: #ff9c00;
+    color: #ffffff;
+}
+
+#reset:hover {
+    background-color: #ff7600;
+    transition: 0.3s
+}
