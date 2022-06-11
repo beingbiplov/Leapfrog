@@ -112,8 +112,18 @@ class ball {
 
                 if (distance <= radiusSum){
 
+                    // let new_sx1 = (this.sx * (this.w/2 - b2.w/2) + (2 * b2.w/2 * b2.sx)) / (this.w/2 + b2.w/2);
+                    // let new_sy1 = (this.sy * (this.w/2 - b2.w/2) + (2 * b2.w/2 * b2.sy)) / (this.w/2 + b2.w/2);
+
+                    // let new_sx2 = (b2.sx * (b2.w/2 - this.w/2) + (2 * this.w/2 * this.sx)) / (b2.w/2 + this.w/2);
+                    // let new_sy2 = (b2.sy * (b2.w/2 - this.w/2) + (2 * this.w/2 * this.sy)) / (b2.w/2 + this.w/2);
+                    // this.sx = new_sx1;
+                    // this.sy = new_sy1;
+                    // b2.sx = new_sx2;
+                    // b2.sy = new_sy2;
+
                     this.dx = -this.dx
-                    this.dy = -this.dy           
+                    this.dy = -this.dy
                 }
             }             
         })          
@@ -134,7 +144,7 @@ let generateBalls = (n) =>{
         let ballSy = getRandomInt(1,3)
         let ballDx = Math.random()>0.5? 1: -1
         let ballDy = Math.random()>0.5? 1: -1
-        let ballW = getRandomInt(10,40)
+        let ballW = getRandomInt(20,40)
         let ballH = ballW
         let collision = 0
 
