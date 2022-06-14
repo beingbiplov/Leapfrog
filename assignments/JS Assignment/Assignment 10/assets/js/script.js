@@ -21,22 +21,31 @@ class CarGame{
         this.carGameClass = carGameClass
         this.lanes = lanes
         this.game
+        this.score = 0
+        this.highscore = 0
+
         this.userCarDiv
         this.userCar
+        this.userCarYPos = 470
         this.carHeight = 115
         this.userCarLane = 1
         this.speed = speed
         this.carList = carList
         this.carSpeed = carSpeed
+        this.enemyCarSpeed = 1.2
         this.enemyCarList = []
 
         this.enemyCarMoveInterval
         this.enemyCarCreateInterval
+        this.collisionInterval
+        this.scoreInterval
+        this.gameSpeedInterval
 
         this.carControls()
         this.userCarCreate()
         this.enemyCarCreate()
         this.enemyCarMove()
+        this.detectCollision()
     }
 
     getPosX(lane){
@@ -50,7 +59,7 @@ class CarGame{
         this.userCarDiv.style.width = toPx(600 / (this.lanes)) 
         this.userCarDiv.style.height = toPx(this.carHeight)
         this.userCarDiv.style.position = 'absolute'
-        this.userCarDiv.style.bottom = '2%'
+        this.userCarDiv.style.top = toPx(this.userCarYPos)
 
         this.game.appendChild(this.userCarDiv)
 
@@ -132,7 +141,7 @@ class CarGame{
             //     clearInterval(this.enemyCarCreateInterval)
             //     setTimeout(this.enemyCarCreate(), 2000)
             // }
-            }, this.speed * 150)
+            }, this.speed * 135)
         
     }
 
@@ -148,24 +157,81 @@ class CarGame{
                     // console.log(`speed: ${this.speed}`)
                     this.enemyCarList.forEach((carDict, i) => {
                         
-                        const newCarPos = carDict.pos + this.carSpeed
+                        const newCarPos = carDict.pos + this.enemyCarSpeed
                         this.enemyCarList[i]['pos'] = newCarPos
                         carDict.car.style.top = toPx(newCarPos)
 
                         if (this.enemyCarList[i]['pos'] > 580){
+                            this.updateScore()
                             this.enemyCarList[i]['car'].remove()
                             this.enemyCarList.splice(i, 1)
                         
                         }
-                    })
-            
-                
+                    })     
             }
-            }, this.speed )         
+            }, this.carSpeed )         
     }
+
+    detectCollision(){
+        this.collisionInterval = setInterval(() => {
+            for (const car of this.enemyCarList){
+                var dim1 = {x: this.getPosX(this.userCarLane), y: this.userCarYPos, w: (600 / (this.lanes)), h: this.carHeight}
+                var dim2 = {x: this.getPosX(car['lane']), y: car['pos'], w: (600 / (this.lanes)), h: this.carHeight}
+
+                if (dim1.x < dim2.x + dim2.w &&
+                    dim1.x + dim1.w > dim2.x &&
+                    dim1.y < dim2.y + dim2.h &&
+                    dim1.h + dim1.y > dim2.y) {
+                    // collision detected!
+                        clearInterval(this.enemyCarMoveInterval)
+                        clearInterval(this.enemyCarCreateInterval)
+                        clearInterval(this.collisionInterval)
+                        clearInterval(this.scoreInterval)
+                        this.handleCollision() 
+                } 
+            }
+        }, 1)
+    }
+
+    checkGameSpeed() {
+        
+        if (this.score % 2 ==0 ){
+            if (this.carSpeed >=2){
+                this.carSpeed -= 1
+                clearInterval(this.enemyCarMoveInterval)
+                this.enemyCarMove()
+            }
+            if (this.enemyCarSpeed < 5) {
+                this.enemyCarSpeed += 0.2
+            } 
+        }
+
+        if (this.score % 3 == 0){
+            if (this.speed >= 4){
+                this.speed -= 3
+                clearInterval(this.enemyCarCreateInterval)
+                this.enemyCarCreate()
+            }
+        }
+        
+        // console.log(this.speed) 
+    }
+
+    updateScore() {
+        this.score += 1
+        this.checkGameSpeed()
+    }
+
+    handleCollision(){
+        if (this.score > this.highscore){
+            this.highscore = this.score
+        }
+        console.log(this.score)
+    }
+
 }
 
 
 let carGameClass = 'car_game'
 
-const game1 = new CarGame(carGameClass, 3, 30, 2, carList)
+const game1 = new CarGame(carGameClass, 3, 18, 7, carList)
