@@ -8,11 +8,15 @@ body{
     background-color: black;
 }
 
-/* .carousel_section{
+.carousel_section{
     display: flex;
+}
+
+/* #carousel-wrapper{
+    float: left;
 } */
 
-.carousel-container {
+.carousel-container, .carouse2-container {
     width: 500px;
     height: 50vh;
     margin: 10% auto;
@@ -21,7 +25,7 @@ body{
     overflow: hidden;
 }
 
-.carousel-image-wrapper{
+.carousel-image-wrapper, .carouse2-image-wrapper{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -30,18 +34,18 @@ body{
     left: 0;
 }
 
-.carousel-image-wrapper img {
+.carousel-image-wrapper img, .carouse2-image-wrapper img {
     width: 100%;
     height: 100%;
 }
 
 
-.dot.active {
+.dot1.active1, .dot2.active2 {
     opacity: 0.8;
     background-color: rgb(14, 14, 14);
     transition: 0.7s;
 }
 
-.dot:hover {
+.dot1:hover, .dot2:hover {
     background-color: rgb(118 117 117);
 }
