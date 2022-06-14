@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 5% 0;
+}
+.car_game{
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/road.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: move 2s infinite linear;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 200px;
+    }
+}
