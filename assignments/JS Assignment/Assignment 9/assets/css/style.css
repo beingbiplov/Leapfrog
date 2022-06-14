@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/* .carousel_section{
+    display: flex;
+} */
+
+.carousel-container {
+    width: 500px;
+    height: 50vh;
+    margin: 10% auto;
+    /* border: 2px solid #ec2; */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-image-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.carousel-image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.dot.active {
+    opacity: 0.8;
+    background-color: rgb(14, 14, 14);
+    transition: 0.7s;
+}
+
+.dot:hover {
+    background-color: rgb(118 117 117);
+}
