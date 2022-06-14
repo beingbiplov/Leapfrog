@@ -2,6 +2,10 @@ let toPx = (n) => {
     return `${n}px`
 }
 
+const start = document.getElementById('start')
+const mainMenu = document.getElementById('main_menu')
+const gameScreen = document.getElementById('car_game')
+const gameOverMsg = document.getElementById('game_over')
 
 let getRandomFromList = (list) =>  {
     return list[Math.floor(Math.random() * list.length)];
@@ -35,6 +39,9 @@ class CarGame{
         this.enemyCarSpeed = 1.2
         this.enemyCarList = []
 
+        this.scoreDiv
+        this.score
+
         this.enemyCarMoveInterval
         this.enemyCarCreateInterval
         this.collisionInterval
@@ -46,6 +53,7 @@ class CarGame{
         this.enemyCarCreate()
         this.enemyCarMove()
         this.detectCollision()
+        
     }
 
     getPosX(lane){
@@ -54,6 +62,7 @@ class CarGame{
 
     userCarCreate(){
         this.game = document.getElementsByClassName('car_game')[0]
+        this.game.style.animation = 'move 0.7s infinite linear'
 
         this.userCarDiv = document.createElement('div')
         this.userCarDiv.style.width = toPx(600 / (this.lanes)) 
@@ -187,6 +196,7 @@ class CarGame{
                         clearInterval(this.enemyCarCreateInterval)
                         clearInterval(this.collisionInterval)
                         clearInterval(this.scoreInterval)
+                        this.game.style.animation = 'none'
                         this.handleCollision() 
                 } 
             }
@@ -220,13 +230,48 @@ class CarGame{
     updateScore() {
         this.score += 1
         this.checkGameSpeed()
+        this.updateScoresDisplay()
+    }
+
+    updateScoresDisplay() {
+        let yourScore = document.getElementById('your_game_score')
+        let gameHighscore = document.getElementById('your_high_score')
+
+        yourScore.innerHTML = this.score
+        gameHighscore.innerHTML = this.highscore
+
     }
 
     handleCollision(){
         if (this.score > this.highscore){
             this.highscore = this.score
         }
-        console.log(this.score)
+        this.updateScoresDisplay()
+        this.updateMainMenuScores()
+        gameScreen.style.display = 'none'
+        mainMenu.style.display = 'block'
+        gameOverMsg.style.display = 'block'
+        
+        this.clearCars()
+    }
+
+    clearCars(){
+        for (const car of this.enemyCarList){
+            car['car'].remove()
+        }
+
+        this.userCarDiv.remove()
+
+    }
+
+    updateMainMenuScores(){
+        let main_hs = document.getElementById('high_score')
+        let main_ys = document.getElementById('your_score')
+        let main_ys_h4 = document.getElementById('your_score_h4')
+
+        main_ys_h4.style.display = 'block'
+        main_hs.innerHTML = this.highscore
+        main_ys.innerHTML = this.score
     }
 
 }
@@ -234,4 +279,12 @@ class CarGame{
 
 let carGameClass = 'car_game'
 
-const game1 = new CarGame(carGameClass, 3, 18, 7, carList)
+
+
+start.addEventListener('click', () => {
+    mainMenu.style.display = 'none'
+    gameScreen.style.display = 'block'
+    const game1 = new CarGame(carGameClass, 3, 18, 7, carList)
+
+
+})
