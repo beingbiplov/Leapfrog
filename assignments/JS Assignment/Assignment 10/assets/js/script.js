@@ -27,7 +27,12 @@ class CarGame{
         this.lanes = lanes
         this.game
         this.score = 0
-        this.highscore = localStorage.highscore
+        let hScore = localStorage.getItem('highscore');
+        if(null == hScore)
+        {
+            hScore = 0;
+        }
+        this.highscore = hScore
 
         this.userCarDiv
         this.userCar
@@ -286,8 +291,15 @@ class CarGame{
 
 let carGameClass = 'car_game'
 
+let hScore = localStorage.getItem('highscore');
+        if(null == hScore)
+        {
+            hScore = 0;
+        }
+
+
 let main_hs = document.getElementById('high_score')
-main_hs.innerHTML = localStorage.highscore
+main_hs.innerHTML = hScore
 
 start.addEventListener('click', () => {
     mainMenu.style.display = 'none'
