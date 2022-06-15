@@ -9,6 +9,18 @@
  }
 .main {
     margin: 5% 0;
+    /* background-image: url('../images/desert.jpg'); */
+    animation: backg 2s infinite linear;
+}
+
+@keyframes backg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600px;
+    }
 }
 
 .scores {
@@ -64,10 +76,10 @@
 .car_game{
     width: 600px;
     height: 600px;
-    background-image: url('../images/road.png');
+    background-image: url('../images/road600.jpg');
     background-size: cover;
     background-repeat: repeat-y;
-    animation: move 0.7s infinite linear;
+    animation: move 2s infinite linear;
     position: relative;
     display: block;
     margin: 0 auto;
@@ -89,6 +101,6 @@
     }
 
     100% {
-        background-position: 0 200px;
+        background-position: 0 300px;
     }
 }
