@@ -128,10 +128,11 @@ class Game {
                 
             }
             else if(this.birdPosY >= (activeGameWindow - this.birdHeight)){
-                this.birdAlive = false
+                
                 this.manageBirdAngle()
-                if (!this.birdAlive){
+                if (this.birdAlive){
                     this.handleCollision()
+                    this.birdAlive = false
                 }
                 
             }
@@ -449,7 +450,8 @@ class Game {
         clearInterval(this.createObstaclesInterval)
         clearInterval(this.removePoleInterval)
         clearInterval(this.detectCollisionInterval)
-        // restart.style.display = 'block'
+        restart.style.display = 'block'
+       
         
     }
 
