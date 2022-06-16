@@ -85,6 +85,17 @@
 #restart{
     position: absolute;
     left: 45%;
-    bottom: 15%;
+    bottom: 25%;
     display: none;
+}
+
+#restart h3{
+    color: #fca146;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
 }

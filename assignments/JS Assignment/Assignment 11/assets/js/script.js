@@ -13,6 +13,8 @@ let gameDiv = document.getElementById('game')
 const mainMenu = document.getElementById('main_menu')
 const start = document.getElementById('start')
 const restart = document.getElementById('restart_btn')
+const finalScoreDiv = document.getElementById('final_score')
+
 const gameScreenHeight = 500
 const baseHeight = 80
 const activeGameWindow = gameScreenHeight - baseHeight
@@ -268,15 +270,6 @@ class Game {
             }
 
             
-
-            // this.poleIds.forEach((id) =>{
-            //     let pole = document.getElementById(id)
-            //     console.log(pole, id)
-            //     const newPos = parseInt(pole.style.right) + 1
-            //     pole.style.right = toPx(parseInt(pole.style.right) + 1)
-            // })
-
-            
                 
         }, 1000/60)
     }
@@ -324,6 +317,8 @@ class Game {
         if (this.score < 10){
             this.scoreDiv.src = `./assets/images/${this.score}.png`
             this.scoreDiv.zIndex = 1
+            this.scoreDiv.setAttribute('class', 'scoresec')
+
         }
         else{
             let strScore = this.score.toString()
@@ -337,6 +332,7 @@ class Game {
                 this.scoreDiv.zIndex = 1
                 this.scoreDiv.style.left = `${left}%`
                 this.scoreDiv.style.top = '2%'
+                this.scoreDiv.setAttribute('class', 'scoresec')
 
                 this.gameSectionDiv.appendChild(this.scoreDiv)
         }
@@ -351,6 +347,7 @@ class Game {
         this.scoreDiv.zIndex = 1
         this.scoreDiv.style.left = '45%'
         this.scoreDiv.style.top = '2%'
+        this.scoreDiv.setAttribute('class', 'scoresec')
 
         this.gameSectionDiv.appendChild(this.scoreDiv)
   
@@ -422,11 +419,13 @@ class Game {
     }
 
     removeAllPole(){
+
+        // for(let i = 0; i< this.poles.length)
             this.poles.forEach((pole, i) =>{
-                    this.poles.splice(i,1)
-                    pole.remove()
-                
+                console.log(pole.id)
+                pole.remove()  
             })
+            this.poles = []
 
     }
 
@@ -440,6 +439,7 @@ class Game {
         this.scoreDiv.style.left = '40%'
         this.scoreDiv.src = `./assets/images/gameover.png`
         this.scoreDiv.style.zIndex = '1'
+        this.scoreDiv.setAttribute('class', 'scoresec')
 
         let baseDiv = document.getElementById('base')
         baseDiv.style.animation = 'none'
@@ -450,9 +450,10 @@ class Game {
         clearInterval(this.createObstaclesInterval)
         clearInterval(this.removePoleInterval)
         clearInterval(this.detectCollisionInterval)
-        restart.style.display = 'block'
-       
-        
+        clearInterval(this.moveBirdDownInterval)
+        clearInterval(this.updateScoreInterval)
+        document.getElementById('restart').style.display = 'block'
+        this.birdDiv.innerHTML = ''
     }
 
 }
@@ -466,12 +467,20 @@ start.addEventListener('click', () => {
 
 })
 
-// start.addEventListener('click', () => {
-//     mainMenu.style.display = 'none'
-//     gameDiv.style.display = 'block'
-//     const game1 = new Game(gameSectionDiv, gameScreenHeight)
+restart.addEventListener('click', () => {
+    let baseDiv = document.getElementById('base')
+    let scores = document.getElementsByClassName('scoresec')
+    for (let score of scores){
+        score.remove()
+    }
+    baseDiv.style.animation = 'move 2s infinite linear'
+    finalScoreDiv.style.display= 'none'
+    mainMenu.style.display = 'none'
+    gameDiv.style.display = 'block'
+    document.getElementById('restart').style.display = 'none'
+    const game1 = new Game(gameSectionDiv, gameScreenHeight)
 
 
-// })
+})
 
 // game1 = new Game(gameSectionDiv, gameScreenHeight)
